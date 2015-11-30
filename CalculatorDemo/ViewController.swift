@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var m_aryDataList:[String] = []
     var m_strDescribe:String = ""
     var m_bIsNumber = false
+    
 
     // all button have thier own tag in Main.storyboard. 
     // just define for easy to read.
