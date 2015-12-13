@@ -80,6 +80,7 @@ class ViewController: UIViewController {
                 }
             }
             
+            checkLastObjState()
             updateUI()
             
             return
@@ -198,6 +199,32 @@ class ViewController: UIViewController {
         }
         else {
             return true
+        }
+    }
+    
+    
+    func checkLastObjState() {
+        // check last obj
+        if self.m_aryDataList.count != 0 {
+            let lastObj:String = self.m_aryDataList.last as String!
+            if lastObj == "." {
+                self.m_eLastIndexState = LastIndexState.Point
+            }
+            else if isOperators(lastObj) {
+                self.m_eLastIndexState = LastIndexState.Symbol
+            }
+            else if lastObj == "(" {
+                self.m_eLastIndexState = LastIndexState.LeftBrackets
+            }
+            else if lastObj == ")" {
+                self.m_eLastIndexState = LastIndexState.RightBrackets
+            }
+            else {
+                self.m_eLastIndexState = LastIndexState.Number
+            }
+        }
+        else {
+            self.m_eLastIndexState = LastIndexState.None
         }
     }
     
