@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -32,20 +32,8 @@
                                             <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wN4-FB-Elb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag4-CW-yJZ">
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-KP-KBv" userLabel="Mbt Brackets (">
                                         <rect key="frame" x="65" y="0.0" width="65" height="80"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.75486232519999996" green="0.85344733390000005" blue="0.93703562060000001" alpha="1" colorSpace="deviceRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
-                                        <state key="normal" title="+/-">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iE6-UM-1dd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCp-KP-KBv" userLabel="Mbt Brackets (">
-                                        <rect key="frame" x="130" y="0.0" width="55" height="80"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.75486232519999996" green="0.85344733390000005" blue="0.93703562060000001" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
@@ -56,20 +44,8 @@
                                             <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBj-me-rvt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-B9-8Ua" userLabel="Mbt Brackets )">
-                                        <rect key="frame" x="185" y="0.0" width="55" height="80"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.75486232519999996" green="0.85344733390000005" blue="0.93703562060000001" alpha="1" colorSpace="deviceRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
-                                        <state key="normal" title=")">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yN1-bQ-j8S"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" alpha="0.80000000000000004" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1j-Ag-NfB">
-                                        <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="240" y="80" width="80" height="64"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.57804305069930029" green="0.62579217657342656" blue="0.70181381118881114" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
@@ -117,7 +93,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.84999999999999998" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n84-qE-JtI">
-                                        <rect key="frame" x="240" y="80" width="80" height="80"/>
+                                        <rect key="frame" x="240" y="144" width="80" height="64"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.57804305069930029" green="0.62579217657342656" blue="0.70181381118881114" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
@@ -165,7 +141,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.90000000000000002" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-Ak-fNM">
-                                        <rect key="frame" x="240" y="160" width="80" height="80"/>
+                                        <rect key="frame" x="240" y="208" width="80" height="64"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.57804305069930029" green="0.62579217657342656" blue="0.70181381118881114" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
@@ -213,7 +189,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.94999999999999996" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzd-El-ucP">
-                                        <rect key="frame" x="240" y="240" width="80" height="80"/>
+                                        <rect key="frame" x="240" y="272" width="80" height="64"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.57804305069930029" green="0.62579217657342656" blue="0.70181381118881114" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
@@ -249,7 +225,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35G-Oc-ufO">
-                                        <rect key="frame" x="240" y="320" width="80" height="80"/>
+                                        <rect key="frame" x="240" y="336" width="80" height="64"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.57804305069930029" green="0.62579217657342656" blue="0.70181381118881114" alpha="1" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
@@ -258,6 +234,29 @@
                                         </state>
                                         <connections>
                                             <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIb-B3-Ncb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000001192092896" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPQ-g4-u1c">
+                                        <rect key="frame" x="195" y="0.0" width="125" height="80"/>
+                                        <color key="backgroundColor" red="0.75062827799999998" green="0.82946350520000001" blue="0.89477709790000004" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kb6-fu-1Sj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-B9-8Ua" userLabel="Mbt Brackets )">
+                                        <rect key="frame" x="130" y="0.0" width="65" height="80"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.75486232519999996" green="0.85344733390000005" blue="0.93703562060000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
+                                        <state key="normal" title=")">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yN1-bQ-j8S"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -271,17 +270,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uW5-Y2-wEn" userLabel="ResultContent">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dox-rn-MGm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 + 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dox-rn-MGm">
                                         <rect key="frame" x="8" y="36" width="304" height="58"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rO-AG-GqS">
-                                        <rect key="frame" x="8" y="102" width="304" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rO-AG-GqS">
+                                        <rect key="frame" x="8" y="102" width="304" height="50"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -310,26 +309,26 @@
                     <connections>
                         <outlet property="m_btAC" destination="SuD-7k-BeU" id="vgw-Kw-FXz"/>
                         <outlet property="m_btAdd" destination="Rzd-El-ucP" id="Oca-XP-kF2"/>
-                        <outlet property="m_btBracketsLeft" destination="uCp-KP-KBv" id="zeY-Ya-kwd"/>
-                        <outlet property="m_btBracketsRight" destination="Zni-B9-8Ua" id="xvL-fT-for"/>
+                        <outlet property="m_btDelete" destination="QPQ-g4-u1c" id="19B-B2-sOA"/>
                         <outlet property="m_btDivide" destination="H1j-Ag-NfB" id="rP7-RY-aHj"/>
                         <outlet property="m_btEquals" destination="35G-Oc-ufO" id="5dW-W2-xrG"/>
+                        <outlet property="m_btLeftBrackets" destination="uCp-KP-KBv" id="d7V-mj-uSX"/>
                         <outlet property="m_btMultiply" destination="n84-qE-JtI" id="a0Y-i4-Mas"/>
+                        <outlet property="m_btPoint" destination="PZT-NC-Cuv" id="Wbb-os-B4t"/>
+                        <outlet property="m_btRightBrackets" destination="Zni-B9-8Ua" id="1Au-Ig-VCC"/>
                         <outlet property="m_btSubtract" destination="fjG-Ak-fNM" id="KAG-da-BbP"/>
                         <outlet property="m_lbDescribe" destination="Dox-rn-MGm" id="uEC-Bd-q8c"/>
                         <outlet property="m_lbResult" destination="3rO-AG-GqS" id="cod-SO-mPa"/>
-                        <outletCollection property="aryNumbers" destination="vHA-Oi-pwZ" collectionClass="NSMutableArray" id="V8d-Lo-MAP"/>
-                        <outletCollection property="aryNumbers" destination="1DC-AA-h4u" collectionClass="NSMutableArray" id="zHB-ps-2cw"/>
-                        <outletCollection property="aryNumbers" destination="sBz-Xl-fkM" collectionClass="NSMutableArray" id="vV8-1e-beW"/>
-                        <outletCollection property="aryNumbers" destination="SUU-Kj-h4H" collectionClass="NSMutableArray" id="Fme-8x-wp3"/>
-                        <outletCollection property="aryNumbers" destination="FDI-aj-7EJ" collectionClass="NSMutableArray" id="Gv8-we-45R"/>
-                        <outletCollection property="aryNumbers" destination="4zA-6B-yOx" collectionClass="NSMutableArray" id="G0h-zO-tet"/>
-                        <outletCollection property="aryNumbers" destination="k73-xa-v9J" collectionClass="NSMutableArray" id="91e-Go-Cby"/>
-                        <outletCollection property="aryNumbers" destination="QWE-3x-OhE" collectionClass="NSMutableArray" id="BsG-dF-VMA"/>
-                        <outletCollection property="aryNumbers" destination="FOT-V5-yex" collectionClass="NSMutableArray" id="MTP-hK-hwf"/>
-                        <outletCollection property="aryNumbers" destination="j6A-gJ-sGp" collectionClass="NSMutableArray" id="igx-zN-QHi"/>
-                        <outletCollection property="aryNumbers" destination="PZT-NC-Cuv" collectionClass="NSMutableArray" id="SAN-fE-oQl"/>
-                        <outletCollection property="aryNumbers" destination="ag4-CW-yJZ" collectionClass="NSMutableArray" id="NaY-pD-3Qc"/>
+                        <outletCollection property="m_aryNumbers" destination="FOT-V5-yex" collectionClass="NSMutableArray" id="Kjr-wx-M03"/>
+                        <outletCollection property="m_aryNumbers" destination="vHA-Oi-pwZ" collectionClass="NSMutableArray" id="YeG-ul-WfH"/>
+                        <outletCollection property="m_aryNumbers" destination="SUU-Kj-h4H" collectionClass="NSMutableArray" id="kfg-d8-4aN"/>
+                        <outletCollection property="m_aryNumbers" destination="sBz-Xl-fkM" collectionClass="NSMutableArray" id="czg-q3-akD"/>
+                        <outletCollection property="m_aryNumbers" destination="1DC-AA-h4u" collectionClass="NSMutableArray" id="GzX-jM-a34"/>
+                        <outletCollection property="m_aryNumbers" destination="k73-xa-v9J" collectionClass="NSMutableArray" id="zfb-7k-6PY"/>
+                        <outletCollection property="m_aryNumbers" destination="4zA-6B-yOx" collectionClass="NSMutableArray" id="anb-b9-0aL"/>
+                        <outletCollection property="m_aryNumbers" destination="FDI-aj-7EJ" collectionClass="NSMutableArray" id="tBK-P3-q7o"/>
+                        <outletCollection property="m_aryNumbers" destination="j6A-gJ-sGp" collectionClass="NSMutableArray" id="CWi-dI-h51"/>
+                        <outletCollection property="m_aryNumbers" destination="QWE-3x-OhE" collectionClass="NSMutableArray" id="xZI-U3-lKC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
