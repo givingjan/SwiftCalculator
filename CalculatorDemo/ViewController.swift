@@ -45,15 +45,54 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.m_lbResult.text = ""
         self.m_lbDescribe.text = ""
+        
+        initButton()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    func initButton (){
+        let image:UIImage = imageWithColor(UIColor(colorLiteralRed: 0.0, green: 0.0, blue: 0.2, alpha: 0.9))
+        for btn in self.m_aryNumbers {
+            
+            btn.setBackgroundImage(image, forState: UIControlState.Highlighted)
+        }
+    }
+    
+    func imageWithColor(color:UIColor) -> UIImage {
+        let rect : CGRect = CGRectMake(0, 0, 1.0, 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context:CGContextRef = UIGraphicsGetCurrentContext()!
+
+        CGContextSetFillColorWithColor(context, color.CGColor)
+        CGContextFillRect(context, rect)
+        
+        let image:UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+//    - (UIImage *)imageWithColor:(UIColor *)color {
+//    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+//    UIGraphicsBeginImageContext(rect.size);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    CGContextSetFillColorWithColor(context, [color CGColor]);
+//    CGContextFillRect(context, rect);
+//    
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    return image;
+//    }
 
     // MARK:Method
     @IBAction func handleTap(sender: UIButton) {
+        
+
+        
         if sender == m_btAC {
             self.m_aryDataList = []
             self.m_aryStack = []
