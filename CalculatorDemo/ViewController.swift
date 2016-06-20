@@ -337,13 +337,22 @@ class ViewController: UIViewController {
             var str:String = ""
             var strN1:String = ""
             var strN2:String = ""
-            var i:Int = 0
-            Out:for i = 0 ; i < self.m_aryOutput.count ; i++ {
+            var index : NSInteger = 0
+            
+            /* 開始計算：
+             此時的aryOutput已是後序表示法,
+             在運算元前面必定會有兩個數字,
+             所以當找到運算元時往前找兩個字元。
+             將其計算後重新排進陣列內,
+             繼續執行此方法.
+            */
+            for i in 0...self.m_aryOutput.count-1 {
                 str = self.m_aryOutput[i]
                 if isOperators(str) {
                     strN1 = self.m_aryOutput[i-2]
                     strN2 = self.m_aryOutput[i-1]
-                    break Out
+                    index = i
+                    break
                 }
             }
             
@@ -359,7 +368,7 @@ class ViewController: UIViewController {
             
             let result:Double = doCalculator(str, n1: n1, n2: n2)
             let newArray = [String(result)]
-            self.m_aryOutput[i-2..<i+1] = ArraySlice(newArray)
+            self.m_aryOutput[index-2..<index+1] = ArraySlice(newArray)
             
             getResult()
         }
@@ -377,14 +386,14 @@ class ViewController: UIViewController {
         
     }
     
-    ///  Transfer to Postfix
+    //  轉換至後序表示法
     func getPostfix(aryList:Array<String>) {
         let aryTemp = aryList
         var strInput:String = ""
-        var icp:Int = 0 // In Comming Priority
+        var icp:Int = 0  // In Comming Priority
         var isp:Int = -1 // In Stack Priority
         
-        for var i = 0 ; i < aryTemp.count ; i++ {
+        for i in 0  ..< aryTemp.count  {
             strInput = aryTemp[i]
             icp = getInCommingPriority(strInput)
             
